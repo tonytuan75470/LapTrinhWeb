@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Template definition -->
+	<definition name="main" template="/layout/main.jsp">
+		<put-attribute name="title" value="CMS" />
+		<put-attribute name="header" value="/layout/header.jsp" />
+		<put-attribute name="menu" value="/layout/menu.jsp" />
+		<put-attribute name="body" value="/layout/login.html"  />
+	</definition>
+	
+		<!-- Login page -->
+	<definition name="Login" extends="main">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body1" value="/layout/login.html" />
+	</definition>
+	
+	<!-- Register page -->
+	<definition name="register" extends="main">
+		<put-attribute name="title" value="Register" />
+		<put-attribute name="body2" value="/layout/register.html" />
+	</definition>
+	
+	<!-- View Content page -->
+	<definition name="view-content" extends="main">
+		<put-attribute name="title" value="View Content" />
+		<put-attribute name="body3" value="/layout/view-content.jsp" />
+	</definition>
+
+	<!-- Add Content page -->
+	<definition name="add-content" extends="main">
+		<put-attribute name="title" value="Add Content" />
+		<put-attribute name="body4" value="/layout/add-content.jsp" />
+	</definition>
+	
+	<!-- Edit Profile page -->
+	<definition name="edit-profile" extends="main">
+		<put-attribute name="title" value="Edit Profile" />
+		<put-attribute name="body5" value="/layout/edit-profile.html" />
+	</definition>
+	
+	
+</tiles-definitions>
